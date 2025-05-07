@@ -1,0 +1,37 @@
+{
+  "name": "google-merchant-prototype",
+  "version": "1.0.0",
+  "description": "A system to process product data and prepare it for Google Merchant API",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node src/server.ts",
+    "start-product-api": "ts-node src/productAPI.ts",
+    "start-csv-api": "ts-node src/csvAPI.ts",
+    "generate-csv": "ts-node src/csvConverter.ts",
+    "watch": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "fs-extra": "^11.3.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.5",
+    "@types/cors": "^2.8.17",
+    "@types/dotenv": "^8.2.3",
+    "@types/express": "^5.0.1",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.15.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
